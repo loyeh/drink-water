@@ -113,3 +113,9 @@ main {
 .deactive {
   display: none;
 }
+
+@media (orientation: portrait) {
+  main {
+    height: 100dvh;
+  }
+}
