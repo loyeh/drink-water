@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #6688ff;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.glass,
+.full,
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.waterBig {
+  width: 150px;
+  height: 300px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin: 10px;
+  position: relative;
+  color: #0055cc;
+  border: 3px solid #0055cc;
+  background-color: white;
+}
+
+.full,
+.empty {
+  width: 100%;
+  position: absolute;
+}
+
+.liter + div {
+  line-height: 14px;
+  font-size: 16px;
+}
+
+.full {
+  height: 100%;
+  top: 0;
+}
+
+.empty {
+  background-color: #00bbff;
+  height: 0;
+  font-size: 32px;
+  font-weight: 600;
+  bottom: 0;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  display: none;
+}
+
+.waterBig + div {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.liter {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.glassesContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  margin: 10px;
+}
+
+.glass {
+  height: 100px;
+  width: 50px;
+  background-color: white;
+  font-size: 16px;
+  color: #0055cc;
+  border: 3px solid #0055cc;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+
+.glass div {
+  pointer-events: none;
+}
+
+.active {
+  background-color: #00bbff;
+  display: flex;
+}
+
+.empty.active {
+  height: 12.5%;
+}
+
+.deactive {
+  display: none;
+}
