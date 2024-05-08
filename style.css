@@ -53,17 +53,19 @@ main {
 .full {
   height: 100%;
   top: 0;
+  transition: 0.5s;
 }
 
 .empty {
   background-color: #00bbff;
-  height: 0;
+  height: 0px;
   font-size: 32px;
   font-weight: 600;
   bottom: 0;
   border-bottom-left-radius: 22px;
   border-bottom-right-radius: 22px;
   display: none;
+  transition: 0.5s;
 }
 
 .waterBig + div {
