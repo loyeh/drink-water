@@ -1,10 +1,7 @@
-let glasses = document.querySelectorAll(".glass");
+const glasses = Array.from(document.querySelectorAll(".glass"));
 const empty = document.querySelector(".empty");
-const full = document.querySelector(".full");
 const liter = document.querySelector(".liter");
-glasses = Array.from(glasses);
-
-console.log(glasses, empty, full);
+const full = document.querySelector(".full");
 
 glasses.forEach((glass, index) => {
   //add listener for any glass that have been clicked
@@ -37,11 +34,6 @@ glasses.forEach((glass, index) => {
 window.addEventListener("click", (e) => {
   console.log(e.target.classList[0]);
   if (!e.target.classList[0]) {
-    // glasses.forEach((glass) => glass.classList.remove("active"));
-    // empty.classList.remove("active");
-    // full.style.height = `100%`;
-    // liter.textContent = `2L`;
-    // full.classList.remove("deactive");
     window.location.reload();
   }
 });
